@@ -171,21 +171,21 @@ function AdminOrders() {
                       </div>
                     </td>
                     <td className="py-3 px-0 text-left">
-                      {/* {order.items.map((item, index) => (
+                      {/* {order.items.map((item, index) => ( */}
                         <div key={index} className="flex items-center">
                           <div className="mr-2">
                             <img
                               className="w-6 h-6 rounded-full"
-                              src={item.product.thumbnail}
-                              alt={item.product.title}
+                              src={order.items[0].thumbnail}
+                              alt={order.items[0].title}
                             />
                           </div>
                           <span>
-                            {item.product.title} - #{item.quantity} - $
-                            {item.product.discountPrice}
+                            {item.items[0].title} - #{order.item[0].quantity} - $
+                            {order.items[0].discountPrice}
                           </span>
                         </div>
-                      ))} */}
+                      {/* ))} */}
                     </td>
                     <td className="py-3 px-0 text-center">
                       <div className="flex items-center justify-center">
